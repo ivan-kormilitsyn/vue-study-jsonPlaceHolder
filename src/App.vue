@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <HeaderBlock title="Lesson 3333" text="Automation" />
+    <HeaderBlock title="Lesson 7" text="Automation" />
     <div id="posts">
       <b-pagination
         v-model="currentPage"

@@ -1,7 +1,6 @@
 <template>
   <div id="posts" class="row">
     <div class="col-12">
-      <div></div>
       <h1>Posts:</h1>
 
       <div v-if="posts.length === 0" class="col-12 text-center">
@@ -17,7 +16,7 @@
           <p>{{ p.body }}</p>
 
           <PostUser :id="p.userId" />
-
+          <UserToDo :userId="p.userId" />
           <PostsComments :postId="p.id" />
         </div>
       </div>
@@ -29,15 +28,16 @@
 // import axios from "axios";
 import PostsComments from "./PostsComments.vue";
 import PostUser from "./PostUser.vue";
-// import UserAvatar from "./UserAvatar.vue";
+import UserToDo from "./UserToDo.vue";
 
 export default {
-  components: { PostsComments, PostUser },
+  components: { PostsComments, PostUser, UserToDo },
 
   props: {
     posts: Array,
     userId: Number,
     postId: Number,
+    todoId: Number,
   },
 
   data() {
