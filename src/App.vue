@@ -36,7 +36,7 @@ export default {
   async mounted() {
     await this.loadPosts();
   },
-  // попробовать сделать старт через post.id или ID .
+
   computed: {
     paginatedPosts() {
       const start = this.currentPage > 1 ? this.currentPage * this.perPage : 0; // 0 - начало массива
