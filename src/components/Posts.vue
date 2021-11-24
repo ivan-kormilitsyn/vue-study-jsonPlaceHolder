@@ -37,7 +37,6 @@ export default {
     posts: Array,
     userId: Number,
     postId: Number,
-    todoId: Number,
   },
 
   data() {
