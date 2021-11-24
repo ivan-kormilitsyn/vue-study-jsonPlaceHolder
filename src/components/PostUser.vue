@@ -52,9 +52,6 @@ export default {
     toogleUsersOpen() {
       this.isUserOpen = !this.isUserOpen;
     },
-    // async getUser() {
-    //   return this.users.filter((user) => user.id === this.postId);
-    // },
   },
 };
 </script>

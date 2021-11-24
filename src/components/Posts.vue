@@ -46,31 +46,6 @@ export default {
       users: [],
     };
   },
-
-  // methods: {
-  // getPostComments() {
-  //   return this.comments.filter((comment) => comment.postId === this.postId);
-  // },
-  // async loadComments() {
-  //   await axios
-  //     .get("https://jsonplaceholder.typicode.com/comments")
-  //     .then((response) => {
-  //       this.comments = response.data;
-  //     });
-  // },
-  // async loadUsers() {
-  //   await axios
-  //     .get("https://jsonplaceholder.typicode.com/users", {
-  //       params: {
-  //         userId: this.userId,
-  //         postId: this.postId,
-  //       },
-  //     })
-  //     .then((response) => {
-  //       this.users = response.data;
-  //     });
-  // },
-  // },
 };
 </script>
  
